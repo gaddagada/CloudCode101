@@ -217,3 +217,63 @@ a += 5; // Equivalent to a = a + 5;
 a -= 3; // Equivalent to a = a - 3;
 a *= 2; // Equivalent to a = a * 2;
 a /= 4; // Equivalent to a = a / 4;
+
+/*
+ * Conditional and Flow Control 
+ *  If Statements 
+ *      executes a block of code if a specified condition is true.
+ *  If-else Statements 
+ *      executes one block of code if the condition is true, and another block of code if the condition is false.
+ *  Else-if Statement 
+ *      allows you to check multiple conditions.
+ *  For Loops 
+ *      repeats a block of code a specified number of times. 
+ */
+
+ // If Statement example 
+Integer score = 85;
+if (score >= 60) {
+    System.debug('Pass');
+}
+
+// If-else Statement example 
+Integer score = 55;
+if (score >= 60) {
+    System.debug('Pass');
+} else {
+    System.debug('Fail');
+}
+
+// Else-if Statement example 
+Integer score = 75;
+if (score >= 90) {
+    System.debug('Grade A');
+} else if (score >= 75) {
+    System.debug('Grade B');
+} else if (score >= 60) {
+    System.debug('Grade C');
+} else {
+    System.debug('Fail');
+}
+
+// For Loop example 
+for (Integer i = 1; i <= 5; i++) {
+    System.debug('Number: ' + i);
+}
+
+// Building a Calculator 
+Integer number1 = 1; 
+Integer number2 = 2;
+
+String operator 'addition'; 
+if(operator == 'addition'){
+    System.debug(number1 + number2);
+}else if (operator == 'subtract'){
+    System.debug(number1 - number2);
+}else if (operator == 'multiply'){
+     System.debug(number1 * number2);
+}else if (operator == 'divide'){
+    System.debug(number1 / number2);
+}else{
+    System.debug('Invalid operator');
+}
