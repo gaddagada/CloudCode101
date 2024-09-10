@@ -277,3 +277,57 @@ if(operator == 'addition'){
 }else{
     System.debug('Invalid operator');
 }
+
+/*
+ * Loops
+ * Traditional For Loops 
+ *      A For Loop is a control flow statement that allows you to repeat a block of code a specified number of times. 
+ *      It consists of three parts: the initialization, the condition, and the increment/decrement.
+ * Enhanced For Loops (For-Each Loop) 
+ *      A For-each Loop is a For Loop that iterates over an iterable object, such as a list, set, or map. 
+ *      It is similar to a For Loop, but it uses a List expression as input.
+ * 
+ * Do-While loop 
+ *      repeatedly executes a block of code as long as a particular Boolean condition remains true
+ * 
+ * While loop 
+ *      repeatedly executes a block of code as long as a particular Boolean condition remains true
+*/
+
+// For Loop example
+public static void printNumbers() {
+    for (Integer i = 1; i <= 5; i++) {
+        System.debug('Number: ' + i);
+    }
+}
+
+// Iterating over a list 
+public static void printListItems() {
+    List<String> items = new List<String>{'Apple', 'Banana', 'Cherry'};
+    for (Integer i = 0; i < items.size(); i++) {
+        System.debug('Item: ' + items[i]);
+    }
+}
+
+// Enhanced For-Each Loop 
+public static void printListItems() {
+    List<String> items = new List<String>{'Apple', 'Banana', 'Cherry'};
+    for (String item : items) {
+        System.debug('Item: ' + item);
+    }
+
+// Do-While loop 
+Integer count = 1;
+
+do {
+    System.debug(count);
+    count++;
+} while (count < 11);
+
+// While loop 
+Integer count = 1;
+
+while (count < 11) {
+    System.debug(count);
+    count++;
+}
