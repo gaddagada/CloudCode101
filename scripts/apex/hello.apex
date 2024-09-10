@@ -162,3 +162,58 @@ public Season getSouthernHemisphereSeason(Season northernHemisphereSeason) {
     }
     return southernHemisphereSeason; 
 }
+
+/*
+ * Operators and Expressions 
+ *  Operators are special symbols in Apex that you can use to perform operations. 
+ *  Most operators are used to compare two operands and return a boolean value, either true or false.
+*/
+
+// Arithmetic Operators 
+// Used to perform basic mathematical operations 
+/*
+ * + Addition
+ * - Subtraction
+ * * Multiplication
+ * / Division
+ * % Modulus (divide and return remainder) 
+ */
+Integer a = 10;
+Integer b = 5;
+Integer sum = a + b;    // Addition
+Integer diff = a - b;   // Subtraction
+Integer product = a * b; // Multiplication
+Integer quotient = a / b; // Division
+Integer mod = a % b; // Modulus
+
+// Relational Operators 
+// Used to compare two values 
+Integer a = 10;
+Integer b = 5;
+Boolean isEqual = (a == b);    // Equal to
+Boolean isNotEqual = (a != b); // Not equal to
+Boolean isGreater = (a > b);   // Greater than
+Boolean isLess = (a < b);      // Less than
+Boolean isGreaterOrEqual = (a >= b); // Greater than or equal to
+Boolean isLessOrEqual = (a <= b);    // Less than or equal to
+
+// Logical Operators 
+// Used to combine multiple boolean expressions 
+Boolean x = true;
+Boolean y = false;
+Boolean andResult = (x && y); // Logical AND
+Boolean orResult = (x || y);  // Logical OR
+Boolean notResult = !x;       // Logical NOT
+
+// Assignment Operator 
+// Used to assign values to variables
+Integer a = 10;
+String message = 'Hello, World!';
+
+// Compound Assignment Operator 
+// Combine an arithmetic operation with assignment
+Integer a = 10;
+a += 5; // Equivalent to a = a + 5;
+a -= 3; // Equivalent to a = a - 3;
+a *= 2; // Equivalent to a = a * 2;
+a /= 4; // Equivalent to a = a / 4;
