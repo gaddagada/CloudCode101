@@ -89,8 +89,8 @@ public with sharing class IntroToApex {
      */
     public static String concatenateStrings(String firstText, String secondText) {
         //String concatenation is done using the '+' operator.
-
-        return firstText + secondText; // Replace null with the variable you used to store the result
+        String combinedString = firstText + secondText; 
+        return combinedString; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -105,10 +105,11 @@ public with sharing class IntroToApex {
         Boolean result = null;
         
         if (num < 0) {
-            return true;
+            result = true;
         } else {
-            return false;               
+            result = false;               
         }
+        return result;
     }
 
     /**
